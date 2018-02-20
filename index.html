@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+
+    <title>Arizona Tax &amp; Business</title>
+  </head>
+  <body>
+    <!-- Site Container Wrapper -->
+    <div class="container-fluid">
+      <div class="col-md-8 col-lg-6 mx-auto">
+        <!-- Navbar Overlay -->
+        <!-- <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#home" onclick="closeNav()">Home</a>
+            <a href="#about" onclick="closeNav()">About Us</a>
+            <a href="#specials" onclick="closeNav()">Specials</a>
+            <a href="#menu" onclick="closeNav()">Menu</a>
+            <a href="#contact" onclick="closeNav()">Location &amp; Contact</a>
+          </div> -->
+        <!-- </div> Navbar Overlay -->
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+          <button class="navbar-toggler" type="button" onclick="openNav()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/aztb.png" height="50px" alt="Arizona Tax &amp; Business Logo"></a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link lead" href="#about">About<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lead" href="#service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lead" href="#test">Testamonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lead" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav> <!-- /Navbar -->
+      </div> <!-- Navbar Div -->
+
+      <div class="container-fluid" id="home">
+        <div class="vertical-center">
+          <div class="col-md-7 mx-auto">
+            <div class="jumbotron">
+              <div class="row justify-content-center">
+                <h1 class="title-heading text-center">Arizona Tax &amp; Business <span class="lead"><i>PLLC</i></span></h1>
+                <h1 class="title-subheading text-center">family owned and operated</h1>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="home-button-div">
+                <a href="#about"><button type="button" class="btn btn-lg learn-more-btn lead">LEARN MORE</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="about">
+        <div class="row about-row align-items-center">
+          <div class="col-lg-4 offset-lg-2 text-center">
+            <h1 class="display-4 about-header">So, a bit about us</h1>
+            <p class="lead about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at porttitor nulla, vitae varius diam. Cras blandit, eros ac volutpat aliquam, nibh nunc placerat eros, id lacinia magna lectus sit amet massa. Quisque sagittis dolor ac felis egestas, vel molestie felis dictum. Nulla ligula tellus, luctus eget placerat ac, volutpat eu arcu.</p>
+          </div>
+          <div class="col-lg-4 about-image-div">
+            <img src="img/teamwork.png" alt="Teamwork">
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="service">
+        <div class="row about-row align-items-center">
+          <div class="col-lg-4 offset-lg-2 service-image-div">
+            <img src="img/laptop.png" alt="Laptop">
+          </div>
+          <div class="col-lg-4 text-center">
+            <h1 class="display-4 service-header">Services we provide</h1>
+            <p class="lead service-paragraph">From individual tax returns, to bookkeeping services, we are sure to accommodate your tax needs. Click below for a list of services.</p>
+            <div class="service-btn-div text-center">
+              <button type="button" class="btn btn-lg service-btn lead" data-toggle="modal" data-target="#exampleModal">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content text-center">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Services</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <p class="lead">Individual Tax Returns</p>
+                <p class="lead">Corporate Partnership Returns</p>
+                <p class="lead">Trust &amp; Estate Returns</p>
+                <p class="lead">Quickbooks Consulting</p>
+                <p class="lead">Full Payroll Services</p>
+                <p class="lead">Payroll Compliance</p>
+                <p class="lead">Sales Tax Reporting</p>
+                <p class="lead">Monthly / Quarterly / Annual Bookkeeping Services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
