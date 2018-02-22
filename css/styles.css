@@ -1,11 +1,73 @@
-/* Font for Home Title text */
-/* font-family: 'Bad Script', cursive; */
-/* font-family: 'Alex Brush', cursive; */
+/* Text and BG Colors */
+    /* Darker Blue - #003366 */
+    /* Lighter Blue - #3399FF */
+    /* Tan - #FFCC99 */
+    /* Orange-ish - #FF9966 */
 
-/* Navbar */
+/* Font for Home Title text */
+    /* font-family: 'Bad Script', cursive; */
+    /* font-family: 'Alex Brush', cursive; */
+
+/* Navbar Items */
+
+    /* Navbar Home */
 
     .navbar .navbar-nav .nav-link { /*Text color*/
         color: #ff9966;
+    }
+
+    /* Main Navbar */
+
+    .main-nav {
+        background-color: #3399FF;
+        width: 100%;
+    }
+
+    .main-nav .navbar-nav .nav-link {
+        color: whitesmoke;
+    }
+
+    /* Navbar Overlay */
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 24px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
     }
 
 /* Backgrounds */
@@ -35,7 +97,7 @@
         margin-left: calc(-50vw + 50%);
     }
 
-    #ovation {
+    #test {
         background-color: #ff9966;
         width: 100vw; /*This and margin left below are needed for child div to be full width*/
         margin-left: calc(-50vw + 50%);
@@ -94,16 +156,17 @@
         color: #003366;
     }
 
+    .about-header {
+        padding-bottom: 20px;
+    }
+
     .about-row {
         padding: 100px 0;
     }
 
-    .about-row img {
-        height: 300px;
-    }
-
-    .about-image-div {
-        text-align: center;
+    .mission-statement-header {
+        font-size: 2.2em;
+        padding-top: 50px;
     }
 
     /* Service */
@@ -135,29 +198,47 @@
         color: white;
     }
 
-    /* Ovation */
+    /* Testamonies */
 
-    #ovation {
+    #test {
         color: #003366;
     }
 
-    .ovation-row {
+    .test-row {
         padding: 100px 0 30px 0;
     }
 
-    .ovation-testa-row {
-        padding-bottom: 80px;
+    .test-testa-row {
+        padding-bottom: 180px;
     }
 
     .carousel-inner {
-        height: 100px;
+        height: 120px;
+    }
+
+    .carousel-inner blockquote p {
+        color: #ffcc99;
+        font-size: 2em;
     }
 
     .carousel-indicators li {
         background-color: #003366;
+        top: 80px;
+    }
+
+    .carousel-indicators .active {
+        background-color: #ffcc99;
     }
 
 /* Media Queries (assigned per section) */
+
+    /* Navbar */
+
+    @media (max-width: 767px) {
+        .main-nav {
+            background-color: transparent;
+        }
+    }
 
     /* Home */
 
@@ -198,8 +279,8 @@
         .about-paragraph {
             font-size: 1em;
         }
-        .about-image-div {
-            display: none;
+        .mission-statement {
+            font-size: 1em;
         }
     }
 
@@ -218,5 +299,16 @@
         }
         .service-btn-div {
             padding-top: 30px;
+        }
+    }
+
+    /* test */
+
+    @media (max-width: 991px) {
+        .test-header {
+            font-size: 2.8em;
+        }
+        .carousel-inner blockquote p {
+            font-size: 1em;
         }
     }

@@ -22,23 +22,23 @@
     <div class="container-fluid">
       <div class="col-md-8 col-lg-6 mx-auto">
         <!-- Navbar Overlay -->
-        <!-- <div id="myNav" class="overlay">
+        <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
             <a href="#home" onclick="closeNav()">Home</a>
-            <a href="#about" onclick="closeNav()">About Us</a>
-            <a href="#specials" onclick="closeNav()">Specials</a>
-            <a href="#menu" onclick="closeNav()">Menu</a>
-            <a href="#contact" onclick="closeNav()">Location &amp; Contact</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#service" onclick="closeNav()">Services</a>
+            <a href="#test" onclick="closeNav()">Testamonials</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
           </div> -->
-        <!-- </div> Navbar Overlay -->
+        </div> <!-- Navbar Overlay -->
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-light">
           <button class="navbar-toggler" type="button" onclick="openNav()">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="img/aztb.png" height="50px" alt="Arizona Tax &amp; Business Logo"></a>
+          <a class="navbar-brand" href="#home"><img src="img/aztb.png" height="50px" alt="Arizona Tax &amp; Business Logo"></a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -75,17 +75,51 @@
           </div>
         </div>
       </div>
+      <!-- Main Nav -->
+      <nav class="main-nav navbar navbar-expand-md navbar-light mt-0 fixed-top" style="display: none"> <!-- Main Navbar -->
+        <button class="navbar-toggler" type="button" onclick="openNav()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item px-3">
+              <a class="nav-link main-nav-link lead" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link main-nav-link lead" href="#about">About</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link main-nav-link lead" href="#service">Services</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link main-nav-link lead" href="#test">Testimonials</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link main-nav-link lead" href="#contact">Location &amp; Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav> <!-- /Main Navbar -->
+      <!-- About Section -->
       <div class="container-fluid" id="about">
         <div class="row about-row align-items-center">
           <div class="col-lg-4 offset-lg-2 text-center">
             <h1 class="display-4 about-header">So, a bit about us</h1>
-            <p class="lead about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at porttitor nulla, vitae varius diam. Cras blandit, eros ac volutpat aliquam, nibh nunc placerat eros, id lacinia magna lectus sit amet massa. Quisque sagittis dolor ac felis egestas, vel molestie felis dictum. Nulla ligula tellus, luctus eget placerat ac, volutpat eu arcu.</p>
+            <p class="lead about-paragraph">Arizona Tax &amp; Business PLLC was established in 2004 as SS2 Enterprises, LLC
+              Principals, Joan D Schnell &amp; Kimberly J Schnell, a mother/daughter partnership, started the company in order to serve the Avra Valley &amp; Marana communities &amp; their large extended family, while still working full-time on the East side of Tucson.</p>
+            <p class="lead about-paragraph">In 2011, Joan &amp; Kim struck out on their own leaving the corporate world behind.
+              The name changed in 2012 to Arizona Tax &amp; Business PLLC, fondly referred to as ATB
+              In a complete role reversal, their former manager, Carol Swango, began working part-time for Joan &amp; Kim in 2013. Between the three of them, they have over 125 years of tax season experience. In addition, their staff is all family &amp; extended family, making ATB truly a family-run business.</p>
+
           </div>
-          <div class="col-lg-4 about-image-div">
-            <img src="img/teamwork.png" alt="Teamwork">
+          <div class="col-lg-4 text-center">
+              <p class="lead about-paragraph">Currently providing services to the Tucson Metropolitan area, including Marana, Oro Valley, Green Valley, Sahuarita, &amp; Vail, with clients from around the corner to the East Coast.  We service clients in almost 20 different states and from all over Arizona.</p>
+            <p class="display-4 mission-statement-header">Our Mission Statement:</p>
+            <p class="lead mission-statement">To provide quality services regarding all areas of taxation at the federal, state, &amp; local levels.</p>
           </div>
         </div>
       </div>
+      <!-- Service Section -->
       <div class="container-fluid" id="service">
         <div class="row about-row align-items-center">
           <div class="col-lg-4 offset-lg-2 service-image-div">
@@ -123,39 +157,40 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid" id="ovation">
-        <div class="row ovation-row justify-content-center">
+      <!-- Testimonial Section -->
+      <div class="container-fluid" id="test">
+        <div class="row test-row justify-content-center">
           <div class="col-lg-6 text-center">
-            <h1 class="display-4 ovation-header">Some kind words from our clients</h1>
+            <h1 class="display-4 test-header">Some kind words from our clients</h1>
           </div>
         </div>
-        <div class="row ovation-testa-row justify-content-center">
-          <div class="col-lg-6">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <!-- <ol class="carousel-indicators">
+        <div class="row test-testa-row justify-content-center">
+          <div class="col-lg-8">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+              <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol> -->
+              </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
 
                   <blockquote class="blockquote text-center">
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <p class="lead mb-0">'A family owned business with high professional ethics they really know their stuff. I highly recommend them.'</p>
 
                   </blockquote>
                 </div>
                 <div class="carousel-item">
 
                   <blockquote class="blockquote text-center">
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <p class="lead mb-0">'Fast and accurate, thanks to the team there for their professionalism.'</p>
 
                   </blockquote>
                 </div>
                 <div class="carousel-item">
 
                   <blockquote class="blockquote text-center">
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <p class="lead mb-0">'Best tax service I have ever used! These ladies really know their stuff, I wouldn't go anywhere else!'</p>
 
                   </blockquote>
                 </div>
@@ -179,6 +214,56 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Navbar Overlay Script -->
+    <script>
+
+      function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+      }
+
+    </script>
+
+    <!-- Main Nav Appear/Disappear on Scroll -->
+    <script>
+
+      window.onscroll = function() {
+        var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        if (scrollTop >= document.getElementById("about").offsetTop -62) {
+          // The -80 will make the navbar appear 75px above the #about section
+          $('.main-nav').fadeIn(100);
+          $('.main-nav').addClass('navbar-fixed');
+        } else {
+          $('.main-nav').fadeOut(1);
+          $('.main-nav').removeClass('navbar-fixed');
+        }
+      }
+
+    </script>
+
+    <!-- SMOOTH SCROLL (EDIT: Needs jquery 1.10.2 to work. Placed at bottom so it's the only script using it-->
+    <!-- https://css-tricks.com/snippets/jquery/smooth-scrolling/ .. Squirfly 1/12/2014 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top -62 //Add -xx after top to give offset
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
 
   </body>
 </html>
