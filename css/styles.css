@@ -156,17 +156,30 @@
         color: #003366;
     }
 
+    .header-row {
+        margin: 0;
+    }
+
     .about-header {
         padding-bottom: 20px;
+        text-align: center;
     }
 
     .about-row {
         padding: 100px 0;
     }
 
+    .about-text-row {
+        margin: 0;
+    }
+
     .mission-statement-header {
         font-size: 2.2em;
         padding-top: 50px;
+    }
+
+    .mission-statement {
+        font-size: 1.5em;
     }
 
     /* Service */
@@ -280,7 +293,7 @@
             font-size: 1em;
         }
         .mission-statement {
-            font-size: 1em;
+            font-size: 1.3em;
         }
     }
 

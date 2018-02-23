@@ -14,3 +14,6 @@ Created main nav for when the rest of the page is viewed.
 Enabled smooth scrolling for the nav links.
 Adjusted about us section by removing the image and adding client provided text.
 
+2/22/2018
+About us section adjusted, placed header at top/center.
+Adjusted mission statement font size and boldness.
