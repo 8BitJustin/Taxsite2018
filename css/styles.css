@@ -8,6 +8,15 @@
     /* font-family: 'Bad Script', cursive; */
     /* font-family: 'Alex Brush', cursive; */
 
+.container-fluid {
+    padding: 0;
+}
+
+.row { /* This fixed the page shifting */
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* Navbar Items */
 
     /* Navbar Home */
@@ -27,6 +36,10 @@
         color: whitesmoke;
     }
 
+    .main-nav .navbar-toggler {
+        margin: 5px 0 0 10px;
+    }
+
     /* Navbar Overlay */
 
     .overlay {
@@ -37,7 +50,7 @@
         top: 0;
         left: 0;
         background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0, 0.9);
+        background-color: rgba(0,0,0, 0.6);
         overflow-y: hidden;
         transition: 0.5s;
     }
@@ -54,7 +67,7 @@
         padding: 8px;
         text-decoration: none;
         font-size: 24px;
-        color: #818181;
+        color: whitesmoke;
         display: block;
         transition: 0.3s;
     }
@@ -103,6 +116,22 @@
         margin-left: calc(-50vw + 50%);
     }
 
+    #contact {
+        background-color: whitesmoke;
+        width: 100vw; /*This and margin left below are needed for child div to be full width*/
+        margin-left: calc(-50vw + 50%);
+    }
+
+    #map {
+        background-color: whitesmoke;
+    }
+
+    #footer {
+        background-color: whitesmoke;
+        width: 100vw; /*This and margin left below are needed for child div to be full width*/
+        margin-left: calc(-50vw + 50%);
+    }
+
 /* Sections */
 
     /* Home */
@@ -137,23 +166,37 @@
         border-color: white;
     }
 
-    .vertical-center {
-        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-        min-height: 100vh; /* These two lines are counted as one :-)       */
-
-        display: flex;
-        align-items: center;
-      }
+    .learn-more-btn:hover {
+        background-color: white;
+        color: #ff9966;
+    }
 
     .learn-more-btn:active {
         background-color: white;
         color: #ff9966;
     }
 
+    .vertical-center {
+        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: 100vh; /* These two lines are counted as one :-)       */
+
+        display: flex;
+        align-items: center;
+    }
+
+    .notification {
+        background-color: indianred;
+        margin-bottom: 100px;
+        padding-bottom: 3px;
+        font-size: 2em;
+        border-radius: 5px;
+    }
+
     /* About */
 
     #about {
         color: #003366;
+        padding: 100px 0;
     }
 
     .header-row {
@@ -166,7 +209,7 @@
     }
 
     .about-row {
-        padding: 100px 0;
+        /* Moved padding: 100px 0; from here to the ID of the section. If issues arise, will move back */
     }
 
     .about-text-row {
@@ -186,10 +229,11 @@
 
     #service {
         color: #003366;
+        padding: 100px 0;
     }
 
     .service-row {
-        padding: 100px 0;
+        /* Moved padding: 100px 0; from here to the ID of the section. If issues arise, will move back */
     }
 
     .service-row img {
@@ -204,6 +248,11 @@
         background-color: transparent;
         color: #003366;
         border-color: #003366;
+    }
+
+    .service-btn:hover {
+        background-color: #003366;
+        color: white;
     }
 
     .service-btn:active {
@@ -243,6 +292,59 @@
         background-color: #ffcc99;
     }
 
+    /* Contact */
+
+    #contact {
+        padding: 100px 0;
+        color: #003366;
+    }
+
+    .contact-btn {
+        background-color: transparent;
+        color: #003366;
+        border-color: #003366;
+        font-size: 2.5em;
+        padding: 2px 18px;
+        font-weight: 100;
+    }
+
+    .contact-btn:hover {
+        background-color: #003366;
+        color: white;
+    }
+
+    .contact-btn:active {
+        background-color: #003366;
+        color: white;
+    }
+
+    .contact-sub {
+        border-bottom: 1px solid #003366;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+
+    .email-div a, .phone-div a {
+        text-decoration: none;
+        color: #003366;
+    }
+
+    .hours, .address {
+        padding-top: 30px;
+    }
+
+    /* Footer */
+
+    #footer {
+        color: #003366;
+        padding: 20px 0;
+    }
+
+    #footer a {
+        text-decoration: none;
+        color: #003366;
+    }
+
 /* Media Queries (assigned per section) */
 
     /* Navbar */
@@ -250,6 +352,9 @@
     @media (max-width: 767px) {
         .main-nav {
             background-color: transparent;
+        }
+        .navbar-toggler {
+            background-color: rgba(255,255,255, 0.4);
         }
     }
 
@@ -323,5 +428,24 @@
         }
         .carousel-inner blockquote p {
             font-size: 1em;
+        }
+    }
+
+    /* Contact */
+
+    @media (max-width: 991px) {
+        .contact-header {
+            font-size: 2.8em;
+        }
+        .contact-btn {
+            font-size: 1.6em;
+        }
+    }
+
+    /* Map */
+
+    @media (max-width: 991px) {
+        #map p {
+            font-size: .8em;
         }
     }

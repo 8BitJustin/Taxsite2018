@@ -17,3 +17,17 @@ Adjusted about us section by removing the image and adding client provided text.
 2/22/2018
 About us section adjusted, placed header at top/center.
 Adjusted mission statement font size and boldness.
+
+2/23/2018
+Lots of updates!
+Navbar Overlay background lightened, whitesmoke color applied to text.
+Contact section completed (all correct information input, php form added *tested).
+Map added.
+Removed padding from .container-fluid and left/right margins from .row.
+Adjusted navbar-toggler margin to keep it off the edges and added background color.
+Added hover to buttons (same as when clicked).
+Added top/bottom padding to entire sections (not testimonial) instead of the rows within.
+Added if/else statement to smooth scroll script. Now, if screen is bigger then specified, when a nav is clicked, it will come up a few pixels above the clicked section. If the screen is smaller (mobile), now the scroll will go straight to the section. Without this, there would be empty space above the section.
+Added footer, added href for email address.
+Added href for company email and phone number.
+Added notification to home section indicating tax season hours.
