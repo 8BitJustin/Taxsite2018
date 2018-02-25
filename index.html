@@ -20,6 +20,7 @@
   <body>
     <!-- Site Container Wrapper -->
     <div class="container-fluid">
+      <!-- Navbar Div -->
       <div class="col-md-8 col-lg-6 mx-auto">
         <!-- Navbar Overlay -->
         <div id="myNav" class="overlay">
@@ -32,8 +33,7 @@
             <a href="#contact" onclick="closeNav()">Contact</a>
           </div> -->
         </div> <!-- Navbar Overlay -->
-
-        <!-- Navbar -->
+        <!-- Navbar Top -->
         <nav class="navbar navbar-expand-md navbar-light">
           <button class="navbar-toggler" type="button" onclick="openNav()">
             <span class="navbar-toggler-icon"></span>
@@ -55,16 +55,15 @@
               </li>
             </ul>
           </div>
-        </nav> <!-- /Navbar -->
+        </nav> <!-- /Navbar Top -->
       </div> <!-- /Navbar Div -->
-
-      <div class="container-fluid" id="home">
+      <!-- Home Section -->
+      <div class="container-fluid" data-parallax="scroll" data-speed="0.3" data-image-src="img/alan-carrillo-519693.jpg" id="home">
         <div class="vertical-center">
           <div class="col-md-7 mx-auto">
             <div class="jumbotron">
-                <p class="notification lead text-center w-100">Notice: Tax Season Hours are effective from Feb. 5th to Apr. 16th 2018</p>
+              <p class="notification lead text-center w-100">Notice: Tax Season Hours are effective from Feb. 5th to Apr. 16th 2018</p> <!-- line used only for tax season, remove after April 16th -->
               <div class="row justify-content-center">
-
                 <h1 class="title-heading text-center">Arizona Tax &amp; Business <span class="lead"><i>PLLC</i></span></h1>
                 <h1 class="title-subheading text-center">family owned and operated</h1>
               </div>
@@ -76,8 +75,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Main Nav -->
+      </div> <!-- /Home Section -->
+      <!-- Main Navbar -->
       <nav class="main-nav navbar navbar-expand-md navbar-light mt-0 px-0" style="display: none"> <!-- Main Navbar -->
         <button class="navbar-toggler" type="button" onclick="openNav()">
           <span class="navbar-toggler-icon"></span>
@@ -110,21 +109,19 @@
           </div>
           <div class="row align-items-center about-text-row">
             <div class="col-lg-4 offset-lg-2 text-center">
-              <p class="lead about-paragraph">Arizona Tax &amp; Business PLLC was established in 2004 as SS2 Enterprises, LLC
-                Principals, Joan D Schnell &amp; Kimberly J Schnell, a mother/daughter partnership, started the company in order to serve the Avra Valley &amp; Marana communities &amp; their large extended family, while still working full-time on the East side of Tucson.</p>
+              <p class="lead about-paragraph">Arizona Tax &amp; Business PLLC was established in 2004 as SS2 Enterprises, LLC. Principals, Joan D Schnell &amp; Kimberly J Schnell, a mother/daughter partnership, started the company in order to serve the Avra Valley &amp; Marana communities &amp; their large extended family, while still working full-time on the East side of Tucson.</p>
               <p class="lead about-paragraph">In 2011, Joan &amp; Kim struck out on their own leaving the corporate world behind.
                 The name changed in 2012 to Arizona Tax &amp; Business PLLC, fondly referred to as ATB
                 In a complete role reversal, their former manager, Carol Swango, began working part-time for Joan &amp; Kim in 2013. Between the three of them, they have over 125 years of tax season experience. In addition, their staff is all family &amp; extended family, making ATB truly a family-run business.</p>
-
             </div>
             <div class="col-lg-4 text-center">
-                <p class="lead about-paragraph">Currently providing services to the Tucson Metropolitan area, including Marana, Oro Valley, Green Valley, Sahuarita, &amp; Vail, with clients from around the corner to the East Coast.  We service clients in almost 20 different states and from all over Arizona.</p>
+              <p class="lead about-paragraph">Currently providing services to the Tucson Metropolitan area, including Marana, Oro Valley, Green Valley, Sahuarita, &amp; Vail, with clients from around the corner to the East Coast.  We service clients in almost 20 different states and from all over Arizona.</p>
               <p class="display-4 mission-statement-header">Our Mission Statement:</p>
               <p class="lead mission-statement"><strong>To provide quality services regarding all areas of taxation at the federal, state, &amp; local levels.</strong></p>
             </div>
           </div>
         </div>
-      </div>
+      </div> <!-- /About Section -->
       <!-- Service Section -->
       <div class="container-fluid" id="service">
         <div class="row service-row align-items-center">
@@ -161,8 +158,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div> <!-- /Modal -->
+      </div> <!-- /Service Section -->
       <!-- Testimonial Section -->
       <div class="container-fluid" id="test">
         <div class="row test-row justify-content-center">
@@ -180,24 +177,18 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-
                   <blockquote class="blockquote text-center">
                     <p class="lead mb-0">'A family owned business with high professional ethics they really know their stuff. I highly recommend them.'</p>
-
                   </blockquote>
                 </div>
                 <div class="carousel-item">
-
                   <blockquote class="blockquote text-center">
                     <p class="lead mb-0">'Fast and accurate, thanks to the team there for their professionalism.'</p>
-
                   </blockquote>
                 </div>
                 <div class="carousel-item">
-
                   <blockquote class="blockquote text-center">
                     <p class="lead mb-0">'Best tax service I have ever used! These ladies really know their stuff, I wouldn't go anywhere else!'</p>
-
                   </blockquote>
                 </div>
               </div>
@@ -208,11 +199,11 @@
               <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-              </a> -->
+              </a> Side indicators, removed -->
             </div>
           </div>
         </div>
-      </div>
+      </div> <!-- /Testimonial Section -->
       <!-- Contact Section -->
       <div class="container-fluid" id="contact">
         <h1 class="display-4 text-center contact-header">So now that you know about us</h1>
@@ -221,48 +212,48 @@
         </div>
         <!-- Modal -->
         <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content text-center">
-                <div class="modal-header">
-                  <h4 class="modal-title lead" id="exampleModalLabel"><b>Contact</b></h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body text-center">
-                  <form name="contactform" method="post" action="send_form_email.php">
-                    <fieldset>
-                      <div class="form-group">
-                        <div class="firstName">
-                            <input id="fname" name="name" type="text" placeholder="Name" class="form-control">
-                        </div>
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content text-center">
+              <div class="modal-header">
+                <h4 class="modal-title lead" id="exampleModalLabel"><b>Contact</b></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <form name="contactform" method="post" action="send_form_email.php">
+                  <fieldset>
+                    <div class="form-group">
+                      <div class="firstName">
+                        <input id="fname" name="name" type="text" placeholder="Name" class="form-control">
                       </div>
-                      <div class="form-group">
-                        <div class="emailInput">
-                            <input id="email" name="email" type="text" placeholder="Email Address (not required)" class="form-control">
-                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="emailInput">
+                        <input id="email" name="email" type="text" placeholder="Email Address (not required)" class="form-control">
                       </div>
-                      <div class="form-group">
-                        <div class="phoneInput">
-                            <input id="phone" name="telephone" type="text" placeholder="Phone Number (not required)" class="form-control">
-                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="phoneInput">
+                        <input id="phone" name="telephone" type="text" placeholder="Phone Number (not required)" class="form-control">
                       </div>
-                      <div class="form-group">
-                        <div class="messageInput">
-                            <textarea class="form-control" id="message" name="comments" placeholder="Enter your message for us here." rows="7"></textarea>
-                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="messageInput">
+                        <textarea class="form-control" id="message" name="comments" placeholder="Enter your message for us here." rows="7"></textarea>
                       </div>
-                      <div class="form-group">
-                        <div class="text-center submit_button">
-                          <button type="submit" value="Submit" class="btn sub-btn btn-outline-primary btn-lg">Submit</button>
-                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="text-center submit_button">
+                        <button type="submit" value="Submit" class="btn sub-btn btn-outline-primary btn-lg">Submit</button>
                       </div>
-                    </fieldset>
-                  </form>
-                </div>
+                    </div>
+                  </fieldset>
+                </form>
               </div>
             </div>
           </div>
+        </div>
         <div class="row justify-content-center text-center phone-div pt-5">
           <div class="col-lg-3 col-10">
             <p class="lead contact-sub"><strong>Phone</strong></p>
@@ -293,18 +284,20 @@
             <p class="lead">Tucson, AZ 85704</p>
           </div>
         </div>
-      </div>
+      </div> <!-- /Contact Section -->
+      <!-- Map Section -->
       <div id="map">
         <p class="lead text-center">Click the Google icon on the bottom left of map for directions</p>
         <iframe src="https://snazzymaps.com/embed/50585" width="100%" height="360px" style="border:none;"></iframe>
-      </div>
+      </div> <!-- /Map Section -->
+      <!-- Footer Section -->
       <div id="footer">
         <div class="row justify-content-center text-center">
           <div class="lead col-md-3">&copy; 2018 Arizona Tax &amp; Business PLLC</div>
           <div class="lead col-md-3"><a href="mailto:j.olson.digital@gmail.com">Proudly created by j.olson.digital@gmail.com</a></div>
         </div>
-      </div>
-    </div>
+      </div> <!-- /Footer Section -->
+    </div> <!-- /Site Content Wrapper -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -314,16 +307,16 @@
 
     <!-- Navbar Overlay Script -->
     <script>
-
       function openNav() {
           document.getElementById("myNav").style.height = "100%";
       }
-
       function closeNav() {
           document.getElementById("myNav").style.height = "0%";
       }
-
     </script>
+
+    <!-- Parallax JS // http://pixelcog.github.io/parallax.js -->
+    <script src="js/parallax.js"></script>
 
     <!-- Main Nav Appear/Disappear on Scroll -->
     <script>
@@ -338,7 +331,6 @@
           $('.main-nav').removeClass('fixed-top');
         }
       }
-
     </script>
 
     <!-- SMOOTH SCROLL (EDIT: Needs jquery 1.10.2 to work. Placed at bottom so it's the only script using it-->
@@ -373,6 +365,5 @@
       });
     });
     </script>
-
   </body>
 </html>

@@ -8,6 +8,8 @@
     /* font-family: 'Bad Script', cursive; */
     /* font-family: 'Alex Brush', cursive; */
 
+/* Misc */
+
 .container-fluid {
     padding: 0;
 }
@@ -19,7 +21,7 @@
 
 /* Navbar Items */
 
-    /* Navbar Home */
+    /* Navbar Top */
 
     .navbar .navbar-nav .nav-link { /*Text color*/
         color: #ff9966;
@@ -85,10 +87,8 @@
 
 /* Backgrounds */
 
-    /* Home */
-
     #home {
-        background-image: url('../img/alan-carrillo-519693.jpg');
+        /* background-image: url('../img/alan-carrillo-519693.jpg'); */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -140,7 +140,6 @@
         background-color: transparent;
         color: white;
         margin: 0;
-
     }
 
     .title-heading {
@@ -179,7 +178,6 @@
     .vertical-center {
         min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
         min-height: 100vh; /* These two lines are counted as one :-)       */
-
         display: flex;
         align-items: center;
     }
@@ -361,6 +359,9 @@
     /* Home */
 
     @media (max-width: 1500px) {
+        .notification {
+            font-size: 1.5em;
+        }
         .title-heading {
             font-size: 7.5em;
         }
@@ -370,6 +371,10 @@
     }
 
     @media (max-width: 769px) {
+        .notification {
+            font-size: .9em;
+            margin-bottom: 50px;
+        }
         .title-heading {
             font-size: 5em;
         }
@@ -380,7 +385,7 @@
 
     @media (max-width: 411px) {
         .title-heading {
-            font-size: 2.5em;
+            font-size: 3em;
         }
         .title-subheading {
             font-size: 1.25em;
@@ -420,7 +425,7 @@
         }
     }
 
-    /* test */
+    /* Test */
 
     @media (max-width: 991px) {
         .test-header {

@@ -31,3 +31,9 @@ Added if/else statement to smooth scroll script. Now, if screen is bigger then s
 Added footer, added href for email address.
 Added href for company email and phone number.
 Added notification to home section indicating tax season hours.
+
+2/24/2018
+Added numerous labels to html and css indicating sections and such.
+Adjusted responsive font-size for notification class.
+Added JS folder, included parallax.js file, added parallax script to bottom of html, and lastly added below to home div tag:
+    data-parallax="scroll" data-speed="0.3" data-image-src="img/alan-carrillo-519693.jpg"
