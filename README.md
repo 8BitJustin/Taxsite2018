@@ -37,3 +37,8 @@ Added numerous labels to html and css indicating sections and such.
 Adjusted responsive font-size for notification class.
 Added JS folder, included parallax.js file, added parallax script to bottom of html, and lastly added below to home div tag:
     data-parallax="scroll" data-speed="0.3" data-image-src="img/alan-carrillo-519693.jpg"
+
+2/26/2016 Post release (Live as of this morning, YAY!!)
+Added &amp; to Corporate &amp; Partnership Returns text.
+Made overlay background darker (from .6 to .75).
+Reduced footer text size at smaller resolution.
