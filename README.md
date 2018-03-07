@@ -42,3 +42,7 @@ Added JS folder, included parallax.js file, added parallax script to bottom of h
 Added &amp; to Corporate &amp; Partnership Returns text.
 Made overlay background darker (from .6 to .75).
 Reduced footer text size at smaller resolution.
+
+3/7/2018 Post release
+Reduced image size of home background to improve load times (reduced by half).
+Added text drop shadow to testimonials go bring them out more and not blend in with the background as much.

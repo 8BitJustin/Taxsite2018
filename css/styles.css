@@ -88,7 +88,7 @@
 /* Backgrounds */
 
     #home {
-        /* background-image: url('../img/alan-carrillo-519693.jpg'); */
+        /* background-image: url('../img/AZCanyonCompress.jpg'); */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -278,6 +278,7 @@
 
     .carousel-inner blockquote p {
         color: #ffcc99;
+        text-shadow: 0 0 15px #003366;
         font-size: 2em;
     }
 
