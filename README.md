@@ -52,3 +52,7 @@ Added loading screen code to file
     Added #load-parent and #load to html.
     Added appropriate CSS within own 'loading' section.
     Added script to run loading at bottom of html.
+
+3/8/2018 1.1
+Adjusted color to loading screen.
+Finalized version, uploading to live site.
