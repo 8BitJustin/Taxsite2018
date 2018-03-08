@@ -46,3 +46,9 @@ Reduced footer text size at smaller resolution.
 3/7/2018 Post release
 Reduced image size of home background to improve load times (reduced by half).
 Added text drop shadow to testimonials go bring them out more and not blend in with the background as much.
+
+3/8/2018 Post release (Loading Screen Update)
+Added loading screen code to file
+    Added #load-parent and #load to html.
+    Added appropriate CSS within own 'loading' section.
+    Added script to run loading at bottom of html.

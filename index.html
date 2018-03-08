@@ -18,6 +18,17 @@
     <title>Arizona Tax &amp; Business</title>
   </head>
   <body>
+    <div id="load-parent">
+      <div id="load">
+        <div>G</div>
+        <div>N</div>
+        <div>I</div>
+        <div>D</div>
+        <div>A</div>
+        <div>O</div>
+        <div>L</div>
+      </div>
+    </div>
     <!-- Site Container Wrapper -->
     <div class="container-fluid">
       <!-- Navbar Div -->
@@ -58,7 +69,7 @@
         </nav> <!-- /Navbar Top -->
       </div> <!-- /Navbar Div -->
       <!-- Home Section -->
-      <div class="container-fluid" data-parallax="scroll" data-speed="0.3" data-image-src="img/alan-carrillo-519693-resize.jpg" id="home">
+      <div class="container-fluid" data-parallax="scroll" data-speed="0.3" data-image-src="img/alan-carrillo-519693-resize-3.jpg" id="home">
         <div class="vertical-center">
           <div class="col-md-7 mx-auto">
             <div class="jumbotron">
@@ -306,6 +317,16 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Loading Script -->
+    <script>
+      function loading() {
+        $(function() {
+          $('#load-parent').fadeOut('slow');
+        });
+      }
+      setTimeout(loading,4000);
+    </script>
 
     <!-- Navbar Overlay Script -->
     <script>
