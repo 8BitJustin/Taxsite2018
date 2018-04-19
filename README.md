@@ -56,3 +56,6 @@ Added loading screen code to file
 3/8/2018 1.1
 Adjusted color to loading screen.
 Finalized version, uploading to live site.
+
+4/18/2018 1.2
+Notification on front page given 'display: none' as tax season is over.
