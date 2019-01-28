@@ -59,3 +59,8 @@ Finalized version, uploading to live site.
 
 4/18/2018 1.2
 Notification on front page given 'display: none' as tax season is over.
+
+1/28/2018 1.3
+Changed notification class dislplay to 'block'.
+Added tax info to html file regarding notification.
+Changed bg color notification class within css to rgba to add transparency.

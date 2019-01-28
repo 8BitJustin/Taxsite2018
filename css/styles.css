@@ -370,13 +370,13 @@
     }
 
     .notification {
-        background-color: indianred;
+        background-color: rgba(205,92,92, 0.75);
         margin-bottom: 100px;
         padding-bottom: 3px;
         font-size: 2em;
         border-radius: 5px;
         /* Notification hidden when tax season is over */
-        display: none;
+        display: block;
     }
 
     /* About */
